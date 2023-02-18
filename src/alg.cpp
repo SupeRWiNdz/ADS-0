@@ -7,6 +7,5 @@ for (x; x>0; --x) {
 if ((a % x == 0) && (b % x == 0)) {
 return (x);
 }
-return (0);
 }
 }
