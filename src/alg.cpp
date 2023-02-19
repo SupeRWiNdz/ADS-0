@@ -1,11 +1,8 @@
 // Copyright 2021 NNTU-CS
 
 int gcd(int a, int b) {
-int x;
-a > b ? x = a : x = b;
-for (x; x>0; --x) {
-if ((a % x == 0) && (b % x == 0)) {
-return (x);
-}
-}
+if (b % a == 0) return a;
+if (a % b == 0) return b;
+if (a > b) return gcd(a % b, b);
+if (b > a) return gcd(b % a, a);
 }
